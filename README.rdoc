@@ -3,12 +3,16 @@
 - ruby 2.2.2p95
 
 * System dependencies
+- Go to app root directory and run `bundle`
 
 * Configuration
 
 * Database creation
+- Default settings would require you to create psql user 'blogger' with password 'blogger', but that can be modified as you wish from config/database.yml
+- run `rake db:create`
 
 * Database initialization
+- run `rake db:migrate db:seed`
 
 * How to run the test suite
 
