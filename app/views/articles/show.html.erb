@@ -5,3 +5,6 @@
 <%= link_to 'delete_article', article_path(@article), method: :delete, data: { confirm: 'Are you sure?'} %>
 <br/>
 <%= link_to 'back to articles', articles_path %>
+
+<h1>Comments</h1>
+<%= render_partial 'comment', collection: @article.comments %>
